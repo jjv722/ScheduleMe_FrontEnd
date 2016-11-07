@@ -2,16 +2,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/city2"
-    android:padding="16dp"
     tools:context="com.example.jjv.scheduleme.LogMe">
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType = "centerCrop" />
     <LinearLayout
-        android:layout_marginTop="-40dp"
-        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_gravity="top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/sign_in">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/banner"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

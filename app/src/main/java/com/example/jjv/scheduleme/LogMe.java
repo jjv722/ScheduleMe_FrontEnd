@@ -1,13 +1,18 @@
 package com.example.jjv.scheduleme;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -46,6 +51,15 @@ public class LogMe extends AppCompatActivity implements Async_API.callback {
         });
         layout = (LinearLayout) findViewById(R.id.sign_in);
         loading = (ProgressBar) findViewById(R.id.loading);
+
+        //  Optimization for setting full screen image.
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        Bitmap bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.city3), size.x, size.y, true);
+        ImageView iv_background = (ImageView) findViewById(R.id.background);
+        iv_background.setImageBitmap(bmp);
+
     }
 
     public void sendLoginInfo(){
