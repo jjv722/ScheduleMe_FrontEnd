@@ -1,23 +1,15 @@
 package com.example.jjv.scheduleme.Auth;
 
 import android.support.v4.app.Fragment;
-import android.app.ListFragment;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Point;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
-import android.view.Display;
 import android.widget.ImageView;
 
 import com.example.jjv.scheduleme.R;
 
-import java.util.ArrayList;
-
 public class LogMe extends FragmentActivity {
-    public ArrayList<Fragment> fragments = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,30 +17,50 @@ public class LogMe extends FragmentActivity {
         setContentView(R.layout.activity_log_me);
 
         //  Optimization for setting full screen image.
-        Display display = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
-        Bitmap bmp = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.city3), size.x, size.y, true);
+        Bitmap src = BitmapFactory.decodeResource(getResources(), R.drawable.city8);
+        Bitmap destination = BitmapCache.getInstance().get("log_me");
+
+        // not cached...
+        if (destination == null) {
+            if (src.getWidth() >= src.getHeight()){
+                destination = Bitmap.createBitmap(
+                        src,
+                        src.getWidth()/2 - src.getHeight()/2,
+                        0,
+                        src.getHeight(),
+                        src.getHeight()
+                );
+            } else {
+                destination = Bitmap.createBitmap(
+                        src,
+                        0,
+                        src.getHeight()/2 - src.getWidth()/2,
+                        src.getWidth(),
+                        src.getWidth()
+                );
+            }
+            BitmapCache.getInstance().add("log_me", destination);
+        }
+
         ImageView iv_background = (ImageView) findViewById(R.id.background);
-        iv_background.setImageBitmap(bmp);
+        iv_background.setImageBitmap(destination);
 
         if (findViewById(R.id.fragment_container) != null) {
             if (savedInstanceState != null) {
                 return;
             }
-            fragments.add(new LoginFragment());
-            fragments.add(new RegisterFragment());
-            for (Fragment f : fragments) {
-                getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, f).commit();
-            }
-            switchFragment(0);
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container, new LoginFragment())
+                    .commit();
         }
     }
 
-    public void switchFragment(int i){
-        for (Fragment f : fragments) {
-            getSupportFragmentManager().beginTransaction().hide(f).commit();
-        }
-        getSupportFragmentManager().beginTransaction().show(fragments.get(i)).commit();
+    public void switchFragment(Fragment f) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                .replace(R.id.fragment_container, f)
+                .commit();
     }
 }

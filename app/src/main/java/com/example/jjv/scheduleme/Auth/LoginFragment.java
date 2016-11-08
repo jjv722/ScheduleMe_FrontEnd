@@ -28,7 +28,7 @@ import java.net.URL;
  */
 
 public class LoginFragment extends Fragment implements Async_API.callback {
-    public String SERVER_URL = "http://192.168.43.68:8000/";
+    public String SERVER_URL = "http://10.147.28.184:8000/";
     public String SERVER_PATH = "api/login";
     public Button logIn;
     public EditText email;
@@ -62,7 +62,7 @@ public class LoginFragment extends Fragment implements Async_API.callback {
             public void onClick(View v) {
                 LogMe l = (LogMe) getActivity();
                 Toast.makeText(getContext(), "Please switch to register fragment..", Toast.LENGTH_SHORT).show();
-                l.switchFragment(1);
+                l.switchFragment(new RegisterFragment());
             }
         });
         logIn = (Button) view.findViewById(R.id.logIn);
