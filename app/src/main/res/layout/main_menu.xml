@@ -45,18 +45,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Book Now"
-            android:background="@android:color/transparent"/>
+            android:background="@drawable/nav_button"/>
         <Button
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Browse Locations"
-            android:background="@android:color/transparent"/>
+            android:background="@drawable/nav_button"/>
         <Button
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="History"
-            android:background="@android:color/transparent"/>
+            android:background="@drawable/nav_button"/>
     </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
