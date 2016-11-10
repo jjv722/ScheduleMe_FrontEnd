@@ -18,6 +18,7 @@ import com.example.jjv.scheduleme.Profile.My;
 public class Main_Menu extends AppCompatActivity {
     private Toolbar t;
     private DrawerLayout d;
+    private int id;
     public void onCreate(Bundle bundle){
         super.onCreate(bundle);
         setContentView(R.layout.main_menu);
@@ -31,6 +32,7 @@ public class Main_Menu extends AppCompatActivity {
 
         d = (DrawerLayout) findViewById(R.id.drawer_layout);
 
+        id = R.id.profile;
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.fragment_container, new My())
@@ -38,7 +40,10 @@ public class Main_Menu extends AppCompatActivity {
     }
 
     public void navigation(View v){
-        int id = v.getId();
+        if (id == v.getId()) {
+            return;
+        }
+        id = v.getId();
         Fragment f = null;
         String out = null;
         switch (id){
