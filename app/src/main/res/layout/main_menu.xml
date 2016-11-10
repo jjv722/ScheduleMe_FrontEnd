@@ -7,15 +7,56 @@
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+        </FrameLayout>
     <!-- The navigation drawer -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:background="#ffeeeeee"
         android:orientation="vertical"
-        android:layout_height="match_parent">
-        <TextView
+        android:layout_gravity="left">
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TEST"/>
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@color/black_overlay"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_below="@id/profile_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:layout_marginTop="16dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <Button
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse Locations"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:background="@android:color/transparent"/>
     </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
