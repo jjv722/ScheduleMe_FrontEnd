@@ -1,10 +1,7 @@
 package com.example.jjv.scheduleme;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -12,7 +9,6 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.jjv.scheduleme.Auth.LoginFragment;
 import com.example.jjv.scheduleme.Profile.My;
 
 /**
