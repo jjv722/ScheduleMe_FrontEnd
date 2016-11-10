@@ -1,6 +1,7 @@
 package com.example.jjv.scheduleme.Auth;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.jjv.scheduleme.Async_API;
+import com.example.jjv.scheduleme.Main_Menu;
 import com.example.jjv.scheduleme.R;
 
 import org.json.JSONObject;
@@ -28,7 +30,7 @@ import java.net.URL;
  */
 
 public class LoginFragment extends Fragment implements Async_API.callback {
-    public String SERVER_URL = "http://10.147.28.184:8000/";
+    public String SERVER_URL = "http://192.168.0.4:8000/";
     public String SERVER_PATH = "api/login";
     public Button logIn;
     public EditText email;
@@ -109,8 +111,11 @@ public class LoginFragment extends Fragment implements Async_API.callback {
                         "Log in successful!" + jsonObject.toString(),
                         Toast.LENGTH_SHORT
                 ).show();
+                Intent intent = new Intent(getActivity(), Main_Menu.class);
+                startActivity(intent);
             }
         }, 3000);
+
 
     }
 
