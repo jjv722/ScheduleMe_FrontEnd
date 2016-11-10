@@ -30,8 +30,6 @@ public class Main_Menu extends AppCompatActivity {
         ).show();
         t = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(t);
->>>>>>> c10c44ed2bdabb9625cd41af0ed8a588337b7706
-
         d = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         id = R.id.profile;
