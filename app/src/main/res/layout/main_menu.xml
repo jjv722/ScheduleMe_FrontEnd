@@ -1,5 +1,5 @@
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -12,8 +12,14 @@
             android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
-        </FrameLayout>
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ToolBarTheme.ToolBarStyle"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:id="@+id/fragment_container"/>
+    </FrameLayout>
     <!-- The navigation drawer -->
     <LinearLayout
         android:layout_width="240dp"
@@ -44,19 +50,33 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Profile"
+            android:background="@drawable/nav_button"
+            android:id="@+id/profile"
+            android:onClick="navigation"/>
+        <Button
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Book Now"
-            android:background="@drawable/nav_button"/>
+            android:background="@drawable/nav_button"
+            android:id="@+id/bookNow"
+            android:onClick="navigation"/>
         <Button
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Browse Locations"
-            android:background="@drawable/nav_button"/>
+            android:background="@drawable/nav_button"
+            android:id="@+id/browseLocation"
+            android:onClick="navigation"/>
         <Button
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="History"
-            android:background="@drawable/nav_button"/>
+            android:background="@drawable/nav_button"
+            android:id="@+id/history"
+            android:onClick="navigation"/>
     </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
