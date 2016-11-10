@@ -8,11 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +29,7 @@ import org.json.JSONObject;
  * Created by jjv on 11/9/16.
  */
 
-public class BookNowFragment extends Fragment {
+public class BookNowFragment extends android.support.v4.app.Fragment {
     final String[] cost = {"$", "$$", "$$$", "$$$$"};
     final String[] ranges = {"5 miles", "10 miles", "15 miles", "20 miles"};
     final String[] categories = {"General Practice", "Optometry", "Dentistry", "Pediatrics"};
@@ -55,6 +57,15 @@ public class BookNowFragment extends Fragment {
         address = (EditText) view.findViewById(R.id.address);
         date = (EditText) view.findViewById(R.id.date);
         book = (Button) view.findViewById(R.id.book);
+
+        ArrayAdapter<String> maxCostAdapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item,cost);
+        maxCost.setAdapter(maxCostAdapter);
+
+        ArrayAdapter<String> maxRangeAdapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item,ranges);
+        maxRange.setAdapter(maxRangeAdapter);
+
+        ArrayAdapter<String> categoryAdapter = new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_item,categories);
+        category.setAdapter(categoryAdapter);
 
         book.setOnClickListener(new View.OnClickListener() {
             @Override

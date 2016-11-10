@@ -10,7 +10,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.jjv.scheduleme.BookNow.BookNowFragment;
 import com.example.jjv.scheduleme.Profile.My;
+
 
 /**
  * Created by jjv on 11/9/16.
@@ -53,7 +55,8 @@ public class Main_Menu extends AppCompatActivity {
                 break;
             }
             case R.id.bookNow: {
-                out = "switching to book now / not implemented";
+                f = new BookNowFragment();
+                out = "switching to book now";
                 break;
             }
             case R.id.browseLocation: {

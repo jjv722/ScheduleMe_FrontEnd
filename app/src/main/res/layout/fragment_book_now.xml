@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/sign_in">
 
-</LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1234 WurberryLane"
+            android:id="@+id/address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="16dp"
+            android:background="@color/light_black_overlay"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mm/dd/yyyy"
+            android:id="@+id/date"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="16dp"
+            android:background="@color/light_black_overlay"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="16dp"
+            android:background="@color/light_black_overlay"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceRange"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="16dp"
+            android:background="@color/light_black_overlay"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceRange"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="16dp"
+            android:background="@color/light_black_overlay"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Book Now!"
+            android:id="@+id/book"
+            android:background="@color/black_overlay"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loading"
+        android:visibility="gone"/>
+</FrameLayout>
