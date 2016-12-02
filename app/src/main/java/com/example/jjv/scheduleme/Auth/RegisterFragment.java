@@ -1,9 +1,9 @@
 package com.example.jjv.scheduleme.Auth;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,7 +28,8 @@ import java.net.URL;
  */
 
 public class RegisterFragment extends Fragment implements Async_API.callback {
-    public String SERVER_URL = "http://10.147.28.184:8000/";
+//    public String SERVER_URL = "http://10.147.28.184:8000/";
+    public String SERVER_URL = "http://10.147.12.210:8000/";
     public String SERVER_PATH = "api/register";
     public Button register;
     public TextView login;
@@ -53,7 +54,7 @@ public class RegisterFragment extends Fragment implements Async_API.callback {
             @Override
             public void onClick(View v) {
                 Toast.makeText(
-                        getContext(),
+                        getActivity(),
                         "Switching to log in fragment...",
                         Toast.LENGTH_SHORT
                 ).show();
@@ -103,7 +104,7 @@ public class RegisterFragment extends Fragment implements Async_API.callback {
             public void run() {
                 loading.setVisibility(View.GONE);
                 Toast.makeText(
-                        getContext(),
+                        getActivity(),
                         "Register successful!" + jsonObject.toString(),
                         Toast.LENGTH_SHORT
                 ).show();
@@ -120,7 +121,7 @@ public class RegisterFragment extends Fragment implements Async_API.callback {
                 loading.setVisibility(View.GONE);
                 layout.setVisibility(View.VISIBLE);
                 Toast.makeText(
-                        getContext(),
+                        getActivity(),
                         "There was a problem when trying to log in...",
                         Toast.LENGTH_SHORT
                 ).show();

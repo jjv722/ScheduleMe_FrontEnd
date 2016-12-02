@@ -23,9 +23,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingBottom="16dp"
-        android:paddingRight="16dp"
         android:layout_below="@id/banner"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="center"/>
 </RelativeLayout>

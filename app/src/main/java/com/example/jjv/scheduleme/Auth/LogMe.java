@@ -1,55 +1,28 @@
 package com.example.jjv.scheduleme.Auth;
 
-import android.support.v4.app.Fragment;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.support.v4.app.FragmentActivity;
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.example.jjv.scheduleme.R;
+import com.squareup.picasso.Picasso;
 
-public class LogMe extends FragmentActivity {
+public class LogMe extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_me);
 
-        //  Optimization for setting full screen image.
-        Bitmap src = BitmapFactory.decodeResource(getResources(), R.drawable.city8);
-        Bitmap destination = BitmapCache.getInstance().get("log_me");
-
-        // not cached...
-        if (destination == null) {
-            if (src.getWidth() >= src.getHeight()){
-                destination = Bitmap.createBitmap(
-                        src,
-                        src.getWidth()/2 - src.getHeight()/2,
-                        0,
-                        src.getHeight(),
-                        src.getHeight()
-                );
-            } else {
-                destination = Bitmap.createBitmap(
-                        src,
-                        0,
-                        src.getHeight()/2 - src.getWidth()/2,
-                        src.getWidth(),
-                        src.getWidth()
-                );
-            }
-            BitmapCache.getInstance().add("log_me", destination);
-        }
-
-        ImageView iv_background = (ImageView) findViewById(R.id.background);
-        iv_background.setImageBitmap(destination);
-
+        Picasso.with(this).load(R.drawable.city8).into((ImageView) findViewById(R.id.background));
         if (findViewById(R.id.fragment_container) != null) {
             if (savedInstanceState != null) {
                 return;
             }
-            getSupportFragmentManager()
+            getFragmentManager()
                     .beginTransaction()
                     .add(R.id.fragment_container, new LoginFragment())
                     .commit();
@@ -57,10 +30,14 @@ public class LogMe extends FragmentActivity {
     }
 
     public void switchFragment(Fragment f) {
-        getSupportFragmentManager()
-                .beginTransaction()
-                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                .replace(R.id.fragment_container, f)
-                .commit();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        if (f.getClass() == LoginFragment.class) {
+            ft.setCustomAnimations(R.animator.slide_in_right, 0);
+        } else if (f.getClass() == RegisterFragment.class) {
+            ft.setCustomAnimations(R.animator.slide_in_left, 0);
+        }
+        ft.replace(R.id.fragment_container, f);
+        ft.commit();
     }
 }
