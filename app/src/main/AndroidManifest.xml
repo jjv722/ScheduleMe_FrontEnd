@@ -10,6 +10,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDL9Eeldh9-tq9vJWYN_NajnmtCgI1-8Mo"/>
         <activity
             android:name=".Auth.LogMe"
             android:theme="@style/AppTheme"

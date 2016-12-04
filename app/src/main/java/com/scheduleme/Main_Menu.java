@@ -11,6 +11,13 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.scheduleme.Profile.My;
 
 /**
@@ -67,7 +74,19 @@ public class Main_Menu extends AppCompatActivity {
                 break;
             }
             case R.id.browseLocation: {
-                out = "switching to browse location / not implemented";
+                f = MapFragment.newInstance();
+                ((MapFragment) f).getMapAsync(new OnMapReadyCallback() {
+                    @Override
+                    public void onMapReady(GoogleMap googleMap) {
+                        CameraPosition cameraPosition = new CameraPosition.Builder()
+                                .target(new LatLng(30.2672, -97.7431))
+                                .zoom(10)
+                                .build();
+                        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                    }
+                });
+                setTitle("Browse Locations");
+                out = "switching to browse location";
                 break;
             }
             case R.id.history: {
