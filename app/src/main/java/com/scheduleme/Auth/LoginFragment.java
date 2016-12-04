@@ -6,33 +6,113 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.scheduleme.Async_API;
 import com.scheduleme.Main_Menu;
 import com.scheduleme.R;
+import com.scheduleme.ScheduleMeAPI;
 
-import org.json.JSONObject;
 
-import java.net.URL;
+import java.io.IOException;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 /**
  * Created by mauricio on 11/6/16.
  */
 
-public class LoginFragment extends Fragment implements Async_API.callback {
-//    public String SERVER_URL = "http://192.168.0.4:8000/";
-    public String SERVER_URL = "http://10.147.12.210:8000/";
-    public String SERVER_PATH = "api/login";
+public class LoginFragment extends Fragment implements Callback<ResponseBody> {
+
+    @Override
+    public void onResponse(Call<ResponseBody> call, final Response<ResponseBody> response) {
+        Log.d("onResponse", "onResponse");
+        Log.d("response code", String.valueOf(response.code()));
+        if (response.code() == 200) {
+            // we gucci
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    loading.setVisibility(View.GONE);
+                    Toast.makeText(
+                            getActivity(),
+                            "Log in successful!",
+                            Toast.LENGTH_SHORT
+                    ).show();
+                    Intent intent = new Intent(getActivity(), Main_Menu.class);
+                    startActivity(intent);
+                    getActivity().finish();
+                    Animation a = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_out_right);
+                    a.reset();
+                    RelativeLayout rl = (RelativeLayout) getActivity().findViewById(R.id.rootView);
+                    rl.clearAnimation();
+                    rl.startAnimation(a);
+                }
+            }, 3000);
+        } else {
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    loading.setVisibility(View.GONE);
+                    layout.setVisibility(View.VISIBLE);
+                    String str;
+                    try {
+                        str = response.errorBody().string();
+                        Log.d("response", str);
+                    } catch (IOException e) {
+                        str = "";
+                    }
+                    String msg;
+                    if (str.contains("wrong password")) {
+                        msg = "The password provided is wrong.";
+                    } else if (str.contains("user does not exist")) {
+                        msg = "Email is not registered.";
+                    } else {
+                        msg = "There was a problem when trying to log in...";
+                    }
+                    Toast.makeText(
+                            getActivity(),
+                            msg,
+                            Toast.LENGTH_SHORT
+                    ).show();
+                }
+            }, 3000);
+        }
+    }
+
+    @Override
+    public void onFailure(Call<ResponseBody> call, Throwable t) {
+        Log.d("onFailure", "onFailure");
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loading.setVisibility(View.GONE);
+                layout.setVisibility(View.VISIBLE);
+                Toast.makeText(
+                        getActivity(),
+                        "There was a problem when trying to log in...",
+                        Toast.LENGTH_SHORT
+                ).show();
+            }
+        }, 3000);
+    }
+
     public Button logIn;
     public EditText email;
     public EditText password;
@@ -86,53 +166,16 @@ public class LoginFragment extends Fragment implements Async_API.callback {
     }
 
     public void sendLoginInfo(){
-        try {
-            JSONObject params = new JSONObject();
-            params.put("u", email.getText().toString());
-            params.put("p", password.getText().toString());
-            URL loginURL = new URL(SERVER_URL + SERVER_PATH);
-            new Async_API(this, params).execute(loginURL);
-        } catch(Exception e) {}
-    }
-
-    @Override
-    public void start() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://192.168.0.8:8000/")
+                .build();
+        ScheduleMeAPI service = retrofit.create(ScheduleMeAPI.class);
         layout.setVisibility(View.GONE);
         loading.setVisibility(View.VISIBLE);
-    }
-
-    @Override
-    public void success(final JSONObject jsonObject) {
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                loading.setVisibility(View.GONE);
-                Toast.makeText(
-                        getActivity(),
-                        "Log in successful!" + jsonObject.toString(),
-                        Toast.LENGTH_SHORT
-                ).show();
-                Intent intent = new Intent(getActivity(), Main_Menu.class);
-                startActivity(intent);
-            }
-        }, 3000);
-
-
-    }
-
-    @Override
-    public void error() {
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                loading.setVisibility(View.GONE);
-                layout.setVisibility(View.VISIBLE);
-                Toast.makeText(
-                        getActivity(),
-                        "There was a problem when trying to log in...",
-                        Toast.LENGTH_SHORT
-                ).show();
-            }
-        }, 3000);
+        Call<ResponseBody> myLogin = service.login(
+                email.getText().toString(),
+                password.getText().toString()
+        );
+        myLogin.enqueue(this);
     }
 }

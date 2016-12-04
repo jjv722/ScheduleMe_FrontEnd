@@ -11,10 +11,9 @@
         <item name="colorAccent">@color/white</item>
     </style>
 
-    <style name="AppBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppBar" parent="Theme.AppCompat.Light">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/mint</item>
         <item name="colorPrimaryDark">#333</item>
         <item name="colorAccent">@color/white</item>

@@ -3,11 +3,14 @@ package com.scheduleme;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
+import android.support.v4.widget.DrawerLayout;
 
 import com.scheduleme.Profile.My;
 
@@ -18,6 +21,7 @@ import com.scheduleme.Profile.My;
 public class Main_Menu extends AppCompatActivity {
     private Toolbar t;
     private DrawerLayout d;
+    private ActionBarDrawerToggle toggle;
     private int id;
     public void onCreate(Bundle bundle){
         super.onCreate(bundle);
@@ -31,6 +35,13 @@ public class Main_Menu extends AppCompatActivity {
         setSupportActionBar(t);
 
         d = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBar ab = getSupportActionBar();
+        if (ab != null) {
+            ab.setDisplayHomeAsUpEnabled(true);
+            ab.setHomeButtonEnabled(true);
+            toggle = new ActionBarDrawerToggle(this, d, t, R.string.open_drawer, R.string.close_drawer);
+            toggle.syncState();
+        }
 
         id = R.id.profile;
         getSupportFragmentManager()

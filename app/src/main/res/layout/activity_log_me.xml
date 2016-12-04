@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.scheduleme.Auth.LogMe">
+    tools:context="com.scheduleme.Auth.LogMe"
+    android:id="@+id/rootView">
     <ImageView
         android:id="@+id/background"
         android:layout_width="match_parent"
