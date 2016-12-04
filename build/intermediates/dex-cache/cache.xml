@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_f1bda5de2e16f0c5cc1c370632fe9ea17cc03507/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
         jumboMode="true"
         optimize="true"
@@ -27,6 +18,51 @@
         revision="24.0.2"
         sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_08414d3f4598289e21021a1785d30f6c398773bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_bd90684070a87cc52a92e1ad82a8616e776c95de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_28a7bb6920fb8124b52a94211943a6e1b125c2d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_e04d9391cd8dfecaf2c9328a901c87e2d551891e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_fe3fe9efed9a157179f644dbdd5d09e8ba693c7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_f1bda5de2e16f0c5cc1c370632fe9ea17cc03507/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,24 +129,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_bd90684070a87cc52a92e1ad82a8616e776c95de/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_28a7bb6920fb8124b52a94211943a6e1b125c2d4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -147,24 +165,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_e04d9391cd8dfecaf2c9328a901c87e2d551891e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="1d775ab52e7823f908d83a4156f484d7578739fd">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_54088aa24112befc9f3ffae066871392c7ed3977/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
@@ -174,12 +174,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_fe3fe9efed9a157179f644dbdd5d09e8ba693c7e/classes.dex" />
+        sha1="ae3e5cbe5e5c0355b88bf70bd62afa8fe156b86c">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_54088aa24112befc9f3ffae066871392c7ed3977/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -187,7 +187,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="ebb7f30c9deb86badc9465db3c2181fd620d6c96">
+        sha1="1051ef78dba69827dc9d81a96fac439c12e5fa71">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d38790d7815573b9a088aa85770d437daa1840c3/classes.dex" />
     </item>
 

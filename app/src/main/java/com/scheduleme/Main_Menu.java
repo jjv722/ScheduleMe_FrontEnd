@@ -1,7 +1,7 @@
 package com.scheduleme;
 
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,7 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
-import android.support.v4.widget.DrawerLayout;
 
 import com.scheduleme.Profile.My;
 
@@ -44,7 +43,7 @@ public class Main_Menu extends AppCompatActivity {
         }
 
         id = R.id.profile;
-        getSupportFragmentManager()
+        getFragmentManager()
                 .beginTransaction()
                 .add(R.id.fragment_container, new My())
                 .commit();
@@ -85,13 +84,13 @@ public class Main_Menu extends AppCompatActivity {
             d.closeDrawer(Gravity.LEFT);
         }
         if (f != null) {
-            getSupportFragmentManager()
+            getFragmentManager()
                     .beginTransaction()
                     .setCustomAnimations(
-                            android.R.anim.slide_in_left,
-                            android.R.anim.slide_out_right,
-                            android.R.anim.slide_in_left,
-                            android.R.anim.slide_out_right)
+                            R.animator.slide_in_right,
+                            R.animator.slide_out_left,
+                            R.animator.slide_in_left,
+                            R.animator.slide_out_right)
                     .replace(R.id.fragment_container, f)
                     .addToBackStack("current")
                     .commit();

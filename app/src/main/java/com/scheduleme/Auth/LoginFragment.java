@@ -21,6 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.scheduleme.Authentication;
 import com.scheduleme.Main_Menu;
 import com.scheduleme.R;
 import com.scheduleme.ScheduleMeAPI;
@@ -55,6 +56,16 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
                             "Log in successful!",
                             Toast.LENGTH_SHORT
                     ).show();
+
+                    /*
+                    *   Save auth information onto preferences.
+                    * */
+                    Authentication auth = new Authentication(
+                            email.getText().toString(),
+                            password.getText().toString()
+                    );
+                    auth.save(getActivity());
+
                     Intent intent = new Intent(getActivity(), Main_Menu.class);
                     startActivity(intent);
                     getActivity().finish();
