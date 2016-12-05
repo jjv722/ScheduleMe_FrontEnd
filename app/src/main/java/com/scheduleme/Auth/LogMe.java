@@ -10,10 +10,9 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.scheduleme.Authentication;
 import com.scheduleme.Main_Menu;
 import com.scheduleme.R;
-import com.scheduleme.ScheduleMeAPI;
+import com.scheduleme.Network.AuthenticationCalls;
 import com.squareup.picasso.Picasso;
 
 import okhttp3.ResponseBody;
@@ -27,12 +26,12 @@ public class LogMe extends Activity implements Callback<ResponseBody> {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Authentication auth = Authentication.load(this);
+        com.scheduleme.Authentication auth = com.scheduleme.Authentication.load(this);
         if (auth != null) {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl("http://192.168.0.8:8000/")
                     .build();
-            ScheduleMeAPI service = retrofit.create(ScheduleMeAPI.class);
+            AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
             Call<ResponseBody> myLogin = service.login(
                     auth.getUser(),
                     auth.getPassword()

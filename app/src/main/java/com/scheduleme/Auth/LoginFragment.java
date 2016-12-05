@@ -21,10 +21,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.scheduleme.Authentication;
 import com.scheduleme.Main_Menu;
 import com.scheduleme.R;
-import com.scheduleme.ScheduleMeAPI;
+import com.scheduleme.Network.AuthenticationCalls;
 
 
 import java.io.IOException;
@@ -60,7 +59,7 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
                     /*
                     *   Save auth information onto preferences.
                     * */
-                    Authentication auth = new Authentication(
+                    com.scheduleme.Authentication auth = new com.scheduleme.Authentication(
                             email.getText().toString(),
                             password.getText().toString()
                     );
@@ -180,7 +179,7 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://192.168.0.8:8000/")
                 .build();
-        ScheduleMeAPI service = retrofit.create(ScheduleMeAPI.class);
+        AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
         layout.setVisibility(View.GONE);
         loading.setVisibility(View.VISIBLE);
         Call<ResponseBody> myLogin = service.login(

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,20 +17,22 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.scheduleme.Async_API;
+import com.scheduleme.Network.AuthenticationCalls;
 import com.scheduleme.R;
 
-import org.json.JSONObject;
+import java.io.IOException;
 
-import java.net.URL;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 /**
  * Created by mauricio on 11/6/16.
  */
 
-public class RegisterFragment extends Fragment implements Async_API.callback {
-    public String SERVER_URL = "http://10.147.12.210:8000/";
-    public String SERVER_PATH = "api/register";
+public class RegisterFragment extends Fragment implements Callback<ResponseBody> {
     public Button register;
     public TextView login;
     public EditText name;
@@ -37,6 +40,68 @@ public class RegisterFragment extends Fragment implements Async_API.callback {
     public EditText password;
     public LinearLayout layout;
     public ProgressBar loading;
+
+    @Override
+    public void onResponse(Call<ResponseBody> call, final Response<ResponseBody> response) {
+        Log.d("onResponse", "code: "+ response.code());
+        if (response.code() == 200) {
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    loading.setVisibility(View.GONE);
+                    Toast.makeText(
+                            getActivity(),
+                            "Register successful!",
+                            Toast.LENGTH_SHORT
+                    ).show();
+                }
+            }, 3000);
+        } else {
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    loading.setVisibility(View.GONE);
+                    layout.setVisibility(View.VISIBLE);
+                    String str;
+                    try {
+                        str = response.errorBody().string();
+                        Log.d("response", str);
+                    } catch (IOException e) {
+                        str = "";
+                    }
+                    String msg;
+                    if (str.contains("user already exists")) {
+                        msg = "Email is currently registered.";
+                    } else {
+                        msg = "There was a problem when trying to sign up...";
+                    }
+                    Toast.makeText(
+                            getActivity(),
+                            msg,
+                            Toast.LENGTH_SHORT
+                    ).show();
+                }
+            }, 3000);
+        }
+    }
+
+    @Override
+    public void onFailure(Call<ResponseBody> call, Throwable t) {
+        Log.d("onFailure", "failed");
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loading.setVisibility(View.GONE);
+                layout.setVisibility(View.VISIBLE);
+                Toast.makeText(
+                        getActivity(),
+                        "There was a problem when trying to log in...",
+                        Toast.LENGTH_SHORT
+                ).show();
+            }
+        }, 3000);
+    }
+
     private Handler handler = new Handler();
 
     @Override
@@ -80,51 +145,18 @@ public class RegisterFragment extends Fragment implements Async_API.callback {
     }
 
     public void sendLoginInfo(){
-        try {
-            JSONObject params = new JSONObject();
-            params.put("name", name.getText().toString());
-            params.put("u", email.getText().toString());
-            params.put("p", password.getText().toString());
-            URL loginURL = new URL(SERVER_URL + SERVER_PATH);
-            new Async_API(this, params).execute(loginURL);
-        } catch(Exception e) {}
-    }
-
-    @Override
-    public void start() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://192.168.0.8:8000/")
+                .build();
+        AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
+        Call<ResponseBody> myRegister = service.register(
+                name.getText().toString(),
+                email.getText().toString(),
+                password.getText().toString()
+        );
+        myRegister.enqueue(this);
         layout.setVisibility(View.GONE);
         loading.setVisibility(View.VISIBLE);
     }
 
-    @Override
-    public void success(final JSONObject jsonObject) {
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                loading.setVisibility(View.GONE);
-                Toast.makeText(
-                        getActivity(),
-                        "Register successful!" + jsonObject.toString(),
-                        Toast.LENGTH_SHORT
-                ).show();
-            }
-        }, 3000);
-
-    }
-
-    @Override
-    public void error() {
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                loading.setVisibility(View.GONE);
-                layout.setVisibility(View.VISIBLE);
-                Toast.makeText(
-                        getActivity(),
-                        "There was a problem when trying to log in...",
-                        Toast.LENGTH_SHORT
-                ).show();
-            }
-        }, 3000);
-    }
 }
