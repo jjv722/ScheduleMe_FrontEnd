@@ -15,6 +15,8 @@ import com.scheduleme.R;
 import com.scheduleme.Network.AuthenticationCalls;
 import com.squareup.picasso.Picasso;
 
+import org.json.JSONObject;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -29,7 +31,7 @@ public class LogMe extends Activity implements Callback<ResponseBody> {
         com.scheduleme.Authentication auth = com.scheduleme.Authentication.load(this);
         if (auth != null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.0.7:8000/")
+                    .baseUrl("http://192.168.0.9:8000/")
                     .build();
             AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
             Call<ResponseBody> myLogin = service.login(
@@ -68,11 +70,13 @@ public class LogMe extends Activity implements Callback<ResponseBody> {
     public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
         Log.d("response", ""+response.code());
         if (response.code() == 200) {
-            Toast.makeText(
-                    this,
-                    "Log in successful!",
-                    Toast.LENGTH_SHORT
-            ).show();
+            try {
+                com.scheduleme.Authentication auth = com.scheduleme.Authentication.load(this);
+                JSONObject jsonObject = new JSONObject(response.body().string());
+                String token = jsonObject.getString("token");
+                auth.setToken(token);
+                auth.save(this);
+            } catch (Exception e) {}
 
             Intent intent = new Intent(this, Main_Menu.class);
             startActivity(intent);

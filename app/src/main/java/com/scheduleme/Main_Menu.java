@@ -34,11 +34,7 @@ public class Main_Menu extends AppCompatActivity {
     public void onCreate(Bundle bundle){
         super.onCreate(bundle);
         setContentView(R.layout.main_menu);
-        Toast.makeText(
-                this,
-                "Inside MainActivity",
-                Toast.LENGTH_SHORT
-        ).show();
+
         t = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(t);
 

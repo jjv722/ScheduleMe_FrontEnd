@@ -24,6 +24,8 @@ import com.scheduleme.Main_Menu;
 import com.scheduleme.Network.AuthenticationCalls;
 import com.scheduleme.R;
 
+import org.json.JSONObject;
+
 import java.io.IOException;
 
 import okhttp3.ResponseBody;
@@ -62,7 +64,12 @@ public class RegisterFragment extends Fragment implements Callback<ResponseBody>
                             email.getText().toString(),
                             password.getText().toString()
                     );
-                    auth.save(getActivity());
+                    try {
+                        JSONObject jsonObject = new JSONObject(response.body().string());
+                        String token = jsonObject.getString("token");
+                        auth.setToken(token);
+                        auth.save(getActivity());
+                    } catch (Exception e) {}
 
                     Intent intent = new Intent(getActivity(), Main_Menu.class);
                     startActivity(intent);

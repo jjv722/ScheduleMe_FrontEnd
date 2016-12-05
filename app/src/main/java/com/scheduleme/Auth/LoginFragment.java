@@ -25,6 +25,8 @@ import com.scheduleme.R;
 import com.scheduleme.Network.AuthenticationCalls;
 
 
+import org.json.JSONObject;
+
 import java.io.IOException;
 
 import okhttp3.ResponseBody;
@@ -49,12 +51,6 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
                 @Override
                 public void run() {
                     loading.setVisibility(View.GONE);
-                    Toast.makeText(
-                            getActivity(),
-                            "Log in successful!",
-                            Toast.LENGTH_SHORT
-                    ).show();
-
                     /*
                     *   Save auth information onto preferences.
                     * */
@@ -62,7 +58,13 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
                             email.getText().toString(),
                             password.getText().toString()
                     );
-                    auth.save(getActivity());
+
+                    try {
+                        JSONObject jsonObject = new JSONObject(response.body().string());
+                        String token = jsonObject.getString("token");
+                        auth.setToken(token);
+                        auth.save(getActivity());
+                    } catch (Exception e) {}
 
                     Intent intent = new Intent(getActivity(), Main_Menu.class);
                     startActivity(intent);
@@ -177,7 +179,7 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
 
     public void sendLoginInfo(){
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.7:8000/")
+                .baseUrl("http://192.168.0.9:8000/")
                 .build();
         AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
         layout.setVisibility(View.GONE);
