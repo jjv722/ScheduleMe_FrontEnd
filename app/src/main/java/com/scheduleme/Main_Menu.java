@@ -149,7 +149,7 @@ public class Main_Menu extends AppCompatActivity {
                             R.animator.slide_in_left,
                             R.animator.slide_out_right)
                     .replace(R.id.fragment_container, f)
-                    .addToBackStack("current")
+                    .addToBackStack(null)
                     .commit();
         }
     }
