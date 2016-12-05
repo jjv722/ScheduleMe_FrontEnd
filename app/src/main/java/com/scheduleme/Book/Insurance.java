@@ -17,6 +17,9 @@ import com.scheduleme.R;
  */
 
 public class Insurance extends Fragment {
+    private ListView listView = null;
+    private ItemAdapter itemAdapter = null;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_book, container, false);
@@ -29,20 +32,19 @@ public class Insurance extends Fragment {
         subheader.setText("Do you have insurance?");
         getActivity().setTitle("Book An Appointment");
 
-        final ItemAdapter ia = new ItemAdapter(getActivity(), R.layout.entry_book);
-        ListView list = (ListView) getActivity().findViewById(R.id.book);
-        list.setAdapter(ia);
+        itemAdapter = new ItemAdapter(getActivity(), R.layout.entry_book);
+        listView = (ListView) getActivity().findViewById(R.id.book);
+        listView.setAdapter(itemAdapter);
 
-        ia.add("Yes");
-        ia.add("No");
+        itemAdapter.add("Yes");
+        itemAdapter.add("No");
 
-
-
-
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 // data is based on item clicked.
+                Fragment f = new BookResult();
+                f.setArguments(getArguments());
                 getFragmentManager()
                         .beginTransaction()
                         .setCustomAnimations(
@@ -50,7 +52,7 @@ public class Insurance extends Fragment {
                                 R.animator.slide_out_left,
                                 R.animator.slide_in_left,
                                 R.animator.slide_out_right)
-                        .replace(R.id.fragment_container, new BookResult())
+                        .replace(R.id.fragment_container, f)
                         .addToBackStack(null)
                         .commit();
             }

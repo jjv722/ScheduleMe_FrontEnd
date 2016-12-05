@@ -10,22 +10,17 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.scheduleme.Authentication;
 import com.scheduleme.ItemAdapter;
 import com.scheduleme.Network.Network;
-import com.scheduleme.Network.PartnerCalls;
 import com.scheduleme.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 /**
  * Created by mauricio on 12/4/16.
@@ -63,7 +58,7 @@ public class Category extends Fragment implements Callback<ResponseBody> {
                         JSONObject jsonObject = (JSONObject) data.get(index);
                         String searchCategory = jsonObject.getString("Category");
                         if (category.equals(searchCategory)) {
-                            Fragment f = new BookDoctor();
+                            Fragment f = new Price();
                             Bundle b = new Bundle();
                             b.putString("category", jsonObject.toString());
                             f.setArguments(b);

@@ -53,4 +53,8 @@ public class ItemAdapter extends BaseAdapter {
         container.add(element);
         notifyDataSetChanged();
     }
+
+    public boolean contains (String element) {
+        return container.contains(element);
+    }
 }
