@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.scheduleme.Authentication;
 import com.scheduleme.ItemAdapter;
+import com.scheduleme.Network.Network;
 import com.scheduleme.Network.PartnerCalls;
 import com.scheduleme.R;
 
@@ -33,6 +34,7 @@ import retrofit2.Retrofit;
 public class Category extends Fragment implements Callback<ResponseBody> {
     private ListView list = null;
     private ItemAdapter itemAdapter = null;
+    private JSONArray data = null;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_book, container, false);
@@ -49,36 +51,39 @@ public class Category extends Fragment implements Callback<ResponseBody> {
         list = (ListView) getActivity().findViewById(R.id.book);
         list.setAdapter(itemAdapter);
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.9:8000/")
-                .build();
-        PartnerCalls service = retrofit.create(PartnerCalls.class);
-        Call<ResponseBody> myPartners = service.getAll(
-                Authentication.load(getActivity()).getToken()
-        );
-        myPartners.enqueue(this);
+        Network.getInstance().getPartners(getActivity()).enqueue(this);
 
-//        ia.add("Dentristry");
-//        ia.add("General Practice");
-//        ia.add("Optometry");
-//        ia.add("Pediatrics");
-//
-//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                // data is based on item clicked.
-//                getFragmentManager()
-//                        .beginTransaction()
-//                        .setCustomAnimations(
-//                                R.animator.slide_in_right,
-//                                R.animator.slide_out_left,
-//                                R.animator.slide_in_left,
-//                                R.animator.slide_out_right)
-//                        .replace(R.id.fragment_container, new BookDoctor())
-//                        .addToBackStack(null)
-//                        .commit();
-//            }
-//        });
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                // data is based on item clicked.
+                String category = (String) itemAdapter.getItem(i);
+                for (int index = 0; index < data.length(); index++) {
+                    try {
+                        JSONObject jsonObject = (JSONObject) data.get(index);
+                        String searchCategory = jsonObject.getString("Category");
+                        if (category.equals(searchCategory)) {
+                            Fragment f = new BookDoctor();
+                            Bundle b = new Bundle();
+                            b.putString("category", jsonObject.toString());
+                            f.setArguments(b);
+                            getFragmentManager()
+                                    .beginTransaction()
+                                    .setCustomAnimations(
+                                            R.animator.slide_in_right,
+                                            R.animator.slide_out_left,
+                                            R.animator.slide_in_left,
+                                            R.animator.slide_out_right)
+                                    .replace(R.id.fragment_container, f)
+                                    .addToBackStack(null)
+                                    .commit();
+                        }
+                    } catch (Exception e) {
+
+                    }
+                }
+            }
+        });
     }
 
     @Override
@@ -86,9 +91,9 @@ public class Category extends Fragment implements Callback<ResponseBody> {
         Log.d("onResponse", "code: " + response.code());
         if (response.code() == 200) {
             try {
-                JSONArray jsonArray = new JSONArray(response.body().string());
-                for (int i = 0; i < jsonArray.length(); i++) {
-                    JSONObject jsonObject = (JSONObject) jsonArray.get(i);
+                data = new JSONArray(response.body().string());
+                for (int i = 0; i < data.length(); i++) {
+                    JSONObject jsonObject = (JSONObject) data.get(i);
                     String category = jsonObject.getString("Category");
                     itemAdapter.add(category);
                 }

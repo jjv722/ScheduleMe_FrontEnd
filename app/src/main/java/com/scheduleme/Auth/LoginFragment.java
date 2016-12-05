@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.scheduleme.Main_Menu;
+import com.scheduleme.Network.Network;
 import com.scheduleme.R;
 import com.scheduleme.Network.AuthenticationCalls;
 
@@ -178,16 +179,11 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
     }
 
     public void sendLoginInfo(){
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.9:8000/")
-                .build();
-        AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
         layout.setVisibility(View.GONE);
         loading.setVisibility(View.VISIBLE);
-        Call<ResponseBody> myLogin = service.login(
+        Network.getInstance().login(
                 email.getText().toString(),
                 password.getText().toString()
-        );
-        myLogin.enqueue(this);
+        ).enqueue(this);
     }
 }

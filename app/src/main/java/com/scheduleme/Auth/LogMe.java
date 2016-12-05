@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.scheduleme.Main_Menu;
+import com.scheduleme.Network.Network;
 import com.scheduleme.R;
 import com.scheduleme.Network.AuthenticationCalls;
 import com.squareup.picasso.Picasso;
@@ -30,15 +31,10 @@ public class LogMe extends Activity implements Callback<ResponseBody> {
         super.onCreate(savedInstanceState);
         com.scheduleme.Authentication auth = com.scheduleme.Authentication.load(this);
         if (auth != null) {
-            Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.0.9:8000/")
-                    .build();
-            AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
-            Call<ResponseBody> myLogin = service.login(
+            Network.getInstance().login(
                     auth.getUser(),
                     auth.getPassword()
-            );
-            myLogin.enqueue(this);
+            ).enqueue(this);
         } else {
             setContentView(R.layout.activity_log_me);
             Picasso.with(this).load(R.drawable.city8).into((ImageView) findViewById(R.id.background));
