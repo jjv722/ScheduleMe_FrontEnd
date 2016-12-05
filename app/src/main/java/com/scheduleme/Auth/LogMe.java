@@ -29,7 +29,7 @@ public class LogMe extends Activity implements Callback<ResponseBody> {
         com.scheduleme.Authentication auth = com.scheduleme.Authentication.load(this);
         if (auth != null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.0.8:8000/")
+                    .baseUrl("http://192.168.0.7:8000/")
                     .build();
             AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
             Call<ResponseBody> myLogin = service.login(

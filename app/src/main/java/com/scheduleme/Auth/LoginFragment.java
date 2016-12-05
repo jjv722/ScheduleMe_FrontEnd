@@ -4,7 +4,6 @@ import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -138,8 +137,9 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
         return inflater.inflate(R.layout.fragment_login, container, false);
     }
 
+
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         forgot = (TextView) view.findViewById(R.id.forgot);
         forgot.setOnClickListener(new View.OnClickListener() {
@@ -177,7 +177,7 @@ public class LoginFragment extends Fragment implements Callback<ResponseBody> {
 
     public void sendLoginInfo(){
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.8:8000/")
+                .baseUrl("http://192.168.0.7:8000/")
                 .build();
         AuthenticationCalls service = retrofit.create(AuthenticationCalls.class);
         layout.setVisibility(View.GONE);

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_cf80163d83e5feadf4984f028a6b25cc79773690/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2f7bd8cc7519d5231aa8d2ae8e905d3f602bd491">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.0.0_717c14acebf35d785712e0c6b89252d69cad6bac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.0.0_602db2c919039491024f267e49f743ac88341d00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_4c172d781466434e7e36a0bd9bf13e7675aa2e84/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="08221d11dba99e5596f492df6bee5a07da584b52">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3eb4f982dc143729f7880747aa6cfbff118adffa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="733964f04c339e425439545b1d172c23b53f8c13">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.0.0_6308c201e7c86ddfd9423aac545c37f9e379d881/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="24536a7b97926a9c155c88425da6875adeb11b51">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.0.0_8520b08ba423a09231d447fed1257165cfa3db8b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.0.0_fa95e51226f0935b5ed687caea7ddb5188352f09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2cb29455028e92e024bbad0d41c6ec772f2433d1">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.0.0_0ec17db5dcd9c7494cef8e07a68afaf464f50f94/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="379d1834afa3c08f43be23a23b103053537b65b5">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.0.0_a39c61a4211f79015bd6f7ac8bef7261fb74c786/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="79e4b41db41d4dbbf364c7bd6aaeee5b876c9d8b">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.0.0_a3e397304ed2e7e35ba8af8695bbc98732160602/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.0_d4f221c8bb1917c79076dfbbc2f9a82c64a95e21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.0.0_5d9b06d8f2f5d036d4862c08ea0f99b0834c1b81/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f4e85eafa876cd7d7641244867dac3f88d71e866">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.0.0_7be36a1067a46aaebc2bf1dd6899088eaf56ffd5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="67a7d712de3e7d025f4efdcec1da183f764bdbab">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.0.0_8814f8b9862e90933da5e15777acf1f9df759f3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.0_99d0b40b5365c1c7c424d3ee97ff342ba3ad1d57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_79c8af6462d7efb93d7b9334ae25ef587f83cc69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0facc6fc326f2406f4bb9b02f442994c5ce6a403">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.0.0_075d453e86f3116b4ad9b5596ef1aa3e3fd2419b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a819aae4f0c711e50b4fd633922a3c1a176cb51e">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.0.0_f2eb690b4f59f4577585f2363571c764392ce4b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_dd8307b4009d8153f03524af21c4c8f5933a11d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4caf75b2cfb7ec6e80a57d0ee64fc102ad3578b8">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.0.0_54f4866087888275227faf7d55e74769c46b5405/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.0.0_b317d127d41e6811f1b94a2c958c1d6c2621ae27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_5699d2d309ff45d47e31d4c7cdab4a8dc29fdc50/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7002ed92a3c46c6a89a786877ecf7978a4f0459">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.0.0_ec5052f88cdcd0d8c149780acca698c4b3af0090/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ebfde1a055aea400df77584a68aa60609f618bed">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.0.0_1308e2e2b72c1bcdf91b9a8230854957995fc60d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b8bedab61b3b5238cd9a07d3b04449d7fecdbc3b">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.0.0_779cd77918b0dbb83de45ba696fa08ddf79b3222/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_ac621be2e9ae30bda0f9d4a4e87149fad6853239/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e467a973b749c6390a5991c9a8edbde96fc10c9">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.0.0_bb38b816a855ac08ef0a04938110ad8d7e591726/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4431efe5d0f67fab36a698dde725946b33a6bf4a">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.0.0_1860e85f32a6998ad18a298bfdc3e08a12852e69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2c5bc0ebbe69c9fab587c2216b36ec44ab8f0704">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.0.0_d9cae5c88ea367658274c1ecdae797a78490753c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_b640f88ed7591e989db6792073e632efb91003bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_7f1238474f1a81fb3a39c0f1e1ed36c2d5bcfa63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f0f6913a208a126269aaa68004ed0329a832c5b">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.0.0_89435c735d890883c92d55b2a179f689aa9786e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_406aa49dbc49dd3ca9c54e6436145e09e0a3d6e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_73e496de4fb935b2592798941e18d796b3b688db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="373cd65725af2781d100ddc193c7d3f14464a774">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.0.0_205b0bed22a9bbeb4ba779d74d5924d4ac13b006/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ef5c5c2afbd174d55cf1cfcac7d0346cbc4c1322">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.0.0_90b4bc9f3af0cd86c729f3b606e787afc8f114da/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_ef62735dba6ace50c85ca89e2f3ba89db923deed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_0e90d8f95cdd8b0c575a58a8b2f95b9748c3763f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.0_08b9aa88d0228d973a1d0cb2083b3b1b8ff9294f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="005786793d72c6deacbbbfd38177ed58e1aa6653">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.0.0_9759932d8c13248f4792535b2883b07fd1399d09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8126914f5bc372a33e27ea90f02412c32468ce8a">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.0.0_4113d2aac59c36cd1fbb761dfb6ef781fb71e85e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_719d37549da336f903b270559f103317ab3004a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_bae427dca8507adb51c5f4277781e13052b31762/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5289e799a43a64c4137d109bf992e10a2f952aa3">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.0.0_cfa3cdc6e54f4ac9159e7e5bda0d4e00ad598129/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.0.0_1bc35f43d0fc45988615d22bfaca9a30a3024c78/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_b1767d576b9f99551b7299669715f228f5a8dbcc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="184428c29b2a4b220cd44284d515db5d8cb5fc76">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.0.0_190be9f872a2cfcaba69f435de6d26f5659f2e25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="70ddab48594608953b20164b82f1f890a9a8174a">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.0.0_a2fa0bf8a2177c3d752c63b46d0c317c0e6852d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_f8f51e2fcd20561b2bfd6959d5d17b713bdb4de4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6b3846be475432d5c35627c7239997044ece4fc6">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_374d54878dac99d44f9aba7f31265d4f9288d641/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.0.0_ee665a528608568cf525a11f0250fd8b2e2e8f6b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="59cca9b91688dc2467754d36793b3d23bebd21a9">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.0.0_41b5cf095615604dc66d41e28bba84f3abf22f85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c11cf7a7a6e5adf8fa564303a11dbc351fc11b7c">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.0.0_db519e82da798fbb7a470a04298892df12f3f4a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_9be9845776a60bc59bc9d668f6dd7c21a8b5704d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="817b9101192f2fd6dc0fd8cd522d8f4a1a75fcdc">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.0.0_ef7fec039a14a27dbe1ff6f6991bef81db74c54a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="69472e334350cafbf442776da05c9a04955252fb">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.0.0_f48c6af8637aa54e4bc39eecb30115c434396788/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ed16ff19f0a9515604a0f08104ca0317b82e29e3">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.0.0_76eee3fee31cf2b8ceaf7429d13b00feb4e9f4f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d96f9f3ef66494d1231304cafd28c962dda80dea">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.0.0_6d00624fa63b0920b763ce277da2701f8ca266c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_a7919b2ae6180b464f0fcbb0292897a276d6cdf6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e595f98f8c525201dccd119f43ad1ddacd4c48d6">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.0.0_89784ee0d876bf6c652dcd2e4bc5ddb5f33b4b55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="294d49a66cc1238d9f7fd352136a45622fa98c0f">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.0.0_a845ec6c650c5a11733673b9e70a7497b1bd3473/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_7cf600ee74f791dc76aa5ff991dd1580591fec88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_a70ca7e574169ed185704c449f51d44c7a4d179a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.0_bfbcdd33deb89f3be9e409af3b503ecafef1912f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/jjv/Desktop/ScheduleMe_FrontEnd/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_d10d4d5e4c04dc77b6ea7c37b6dfb9d5522cf2aa/classes.dex" />
+    </item>
+
+</items>
