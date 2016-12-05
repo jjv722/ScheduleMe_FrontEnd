@@ -23,7 +23,7 @@ public class History extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("My History");
+        getActivity().setTitle("UserProfile History");
         ItemAdapter hia = new ItemAdapter(getActivity(), R.layout.entry_history);
         ListView list = (ListView) getActivity().findViewById(R.id.history);
         list.setAdapter(hia);

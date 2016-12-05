@@ -8,22 +8,38 @@ import android.graphics.drawable.BitmapDrawable;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.scheduleme.Authentication;
+import com.scheduleme.Network.Network;
 import com.scheduleme.R;
+import com.squareup.picasso.Picasso;
+
+import org.json.JSONObject;
+import org.w3c.dom.Text;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * Created by mauricio on 11/9/16.
  */
 
-public class My extends Fragment{
-    Button changeProfilePic;
-    TextView userProfile;
+public class UserProfile extends Fragment implements Callback<ResponseBody> {
+    private Button changeProfilePic = null;
+    private ImageView userProfile = null;
+    private TextView name = null;
+    private TextView emailAddress = null;
+    private JSONObject data = null;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,15 +52,16 @@ public class My extends Fragment{
         getActivity().setTitle("Personal Profile");
 
         changeProfilePic = (Button) view.findViewById(R.id.takeProfilePic);
-        userProfile = (TextView) view.findViewById(R.id.imageProfilePic);
-
-
-
+        userProfile = (ImageView) view.findViewById(R.id.profileImage);
+        name = (TextView) view.findViewById(R.id.name);
+        emailAddress = (TextView) view.findViewById(R.id.emailAddress);
+        Network.getInstance().getUser(Authentication.load(getActivity()).getToken()).enqueue(this);
+        Picasso.with(getActivity()).load(R.drawable.default_profile_pic).into(userProfile);
         changeProfilePic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                if (intent.resolveActivity(getContext().getPackageManager()) != null) {
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
                     startActivityForResult(intent, 1);
                 }
             }
@@ -62,8 +79,22 @@ public class My extends Fragment{
     }
 
 
+    @Override
+    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+        if (response.code() == 200) {
+            try {
+                data = new JSONObject(response.body().string());
+                Log.d("user_data", data.toString());
+                name.setText(data.getString("name"));
+                emailAddress.setText(data.getString("email"));
+            } catch (Exception e) {
 
+            }
+        }
+    }
 
+    @Override
+    public void onFailure(Call<ResponseBody> call, Throwable t) {
 
-
+    }
 }

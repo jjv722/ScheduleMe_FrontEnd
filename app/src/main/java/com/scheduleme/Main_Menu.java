@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.scheduleme.Book.Category;
 import com.scheduleme.History.History;
-import com.scheduleme.Profile.My;
+import com.scheduleme.Profile.UserProfile;
 
 /**
  * Created by jjv on 11/9/16.
@@ -47,7 +47,7 @@ public class Main_Menu extends AppCompatActivity {
             toggle.syncState();
         }
 
-        // My UI
+        // UserProfile UI
         Authentication auth = Authentication.load(this);
         TextView username = (TextView) findViewById(R.id.username);
         username.setText(auth.getUser());
@@ -56,7 +56,7 @@ public class Main_Menu extends AppCompatActivity {
         id = R.id.profile;
         getFragmentManager()
                 .beginTransaction()
-                .add(R.id.fragment_container, new My())
+                .add(R.id.fragment_container, new UserProfile())
                 .commit();
     }
 
@@ -78,7 +78,7 @@ public class Main_Menu extends AppCompatActivity {
                 break;
             }
             case R.id.history: {
-                setTitle("My History");
+                setTitle("UserProfile History");
                 break;
             }
         }
@@ -98,7 +98,7 @@ public class Main_Menu extends AppCompatActivity {
         String out = null;
         switch (id){
             case R.id.profile: {
-                f = new My();
+                f = new UserProfile();
                 out = "switching to profile";
                 break;
             }

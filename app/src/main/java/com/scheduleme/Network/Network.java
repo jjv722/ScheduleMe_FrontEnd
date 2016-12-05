@@ -12,12 +12,14 @@ import retrofit2.Retrofit;
  * Created by mauricio on 12/5/16.
  */
 public class Network {
+//    private String BASE_URL = "http://10.147.207.241:8000/";
     private String BASE_URL = "http://192.168.0.9:8000/";
     private Retrofit retrofit = null;
 
     // calls
     private PartnerCalls partnerCalls = null;
     private AuthenticationCalls authenticationCalls = null;
+    private UserCall userCall = null;
 
     private static Network ourInstance = new Network();
     public static Network getInstance() {
@@ -30,6 +32,7 @@ public class Network {
                 .build();
         partnerCalls = retrofit.create(PartnerCalls.class);
         authenticationCalls = retrofit.create(AuthenticationCalls.class);
+        userCall = retrofit.create(UserCall.class);
     }
 
     public Call<ResponseBody> getPartners(Activity activity) {
@@ -49,5 +52,9 @@ public class Network {
         return authenticationCalls.register(
           name, email, password
         );
+    }
+
+    public Call<ResponseBody> getUser (String t) {
+        return userCall.get(t);
     }
 }

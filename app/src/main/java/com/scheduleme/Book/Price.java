@@ -88,6 +88,7 @@ public class Price extends Fragment {
                         itemAdapter.add(price);
                     }
                 }
+                itemAdapter.sort();
             } catch (Exception e) {
 
             }

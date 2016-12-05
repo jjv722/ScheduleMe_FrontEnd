@@ -3,6 +3,24 @@
 
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.0.0_7c796549d5be525d0867d03cbccf84a55653a55f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="24536a7b97926a9c155c88425da6875adeb11b51">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.0.0_13cec78f3e10f6dc0a19df3cd02da4a532817734/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
         jumboMode="true"
         optimize="true"
@@ -30,6 +48,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="817b9101192f2fd6dc0fd8cd522d8f4a1a75fcdc">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.0.0_55aaa838efc9959e237a35103fdfd2282ff3d4bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2cb29455028e92e024bbad0d41c6ec772f2433d1">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.0.0_3e186ed92da39c4f56905ab454675c8497ffa791/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="005786793d72c6deacbbbfd38177ed58e1aa6653">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.0.0_f101abb3d21f659a88fca398c5436711c71ac1a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -48,6 +93,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b8bedab61b3b5238cd9a07d3b04449d7fecdbc3b">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.0.0_b847562193ad7d5d93826f819b6c2aa267ff8bd5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -63,6 +117,33 @@
         revision="24.0.2"
         sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_e04d9391cd8dfecaf2c9328a901c87e2d551891e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_f1bda5de2e16f0c5cc1c370632fe9ea17cc03507/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_f2249f9d33d88e3b338d43ecb7c7814ad08bc896/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="79e4b41db41d4dbbf364c7bd6aaeee5b876c9d8b">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.0.0_8a31c6b1d741abb5866a1e39623b544dd69613c0/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,6 +174,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="733964f04c339e425439545b1d172c23b53f8c13">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.0.0_da098c46e47c2d163461859f272789575255df80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
         jumboMode="true"
         optimize="true"
@@ -102,12 +192,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.0.0_d08a2b61216324118cebf1d1612b0da75a6182d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.0.0_c6fcd840b0e2e996ba8c2d869b03ebd6e1989515/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_4d0f10c3425de104f276be46a8eae2a9858e7d20/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="ed16ff19f0a9515604a0f08104ca0317b82e29e3">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.0.0_003a1b4d9e91e2cdffc6e9ad357883108bc3a64f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_0780834465f71fe91ba26fc8419a21534ae7b874/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,11 +273,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="811b56878dfee1cda87b727856d91b549bde1099">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_54088aa24112befc9f3ffae066871392c7ed3977/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="ce2a58e0733f58d39daef1cbd4a3188e60829ed0">
+        sha1="68d5cd571b230bac9ef987f2fda8aedf53f579c0">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d38790d7815573b9a088aa85770d437daa1840c3/classes.dex" />
     </item>
     <item
@@ -165,12 +300,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e467a973b749c6390a5991c9a8edbde96fc10c9">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.0.0_8988b3610c2e0585ccf9f013ecf7b6073706f811/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="f4e85eafa876cd7d7641244867dac3f88d71e866">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.0.0_ee4750f05dc155b000c19dbdacb76fa8e84e39ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_08414d3f4598289e21021a1785d30f6c398773bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8126914f5bc372a33e27ea90f02412c32468ce8a">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.0.0_d4a9dc7cbc9a6a073aebfeee53c35f4c1f250feb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.0_57929fc63f4c994a05e2a866bc00c303c9a21d53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="69472e334350cafbf442776da05c9a04955252fb">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.0.0_333dada050f60a4be3b36f80bf60c9598ac7d488/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="59cca9b91688dc2467754d36793b3d23bebd21a9">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.0.0_812ec3d8ce14f939f24b296243e0d3dced65d355/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,12 +426,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d96f9f3ef66494d1231304cafd28c962dda80dea">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.0.0_4f09cf238cf1b50bd1eb313d92886625939caa7f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.0.0_e1debd58bddea43f26386d5b9ecd71fad86678d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.0_f9c5a821c7eed29b1e20d1b8d3d780c8aabb9118/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,12 +462,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_b4db75d5399f6856f50e3db63e85f0bd0476c478/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="4caf75b2cfb7ec6e80a57d0ee64fc102ad3578b8">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.0.0_7fd81b5898b4bb96a38738717647f214e3bde5ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_c7754ed8ae117d356a24af61c7c6d21bf92120ed/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -273,12 +498,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/mauricio/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_5c3ec84aa6d446694486e6caa2d0878ab32fedc3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5289e799a43a64c4137d109bf992e10a2f952aa3">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.0.0_dbf9018abbbe6eeb12b7bb078cef1ffd6d8b040c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ebfde1a055aea400df77584a68aa60609f618bed">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.0.0_07f3fa2bf364fbf6346153eca2965d45a30bae3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="2c5bc0ebbe69c9fab587c2216b36ec44ab8f0704">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.0.0_5a41d246577fa584c6438568e4f5efbe19170341/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_1be689bd1d43dcc00b4c771e935dbb59e149a00e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f0f6913a208a126269aaa68004ed0329a832c5b">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.0.0_80390f037940aeee0da3028fbce8e784ff9a4765/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7002ed92a3c46c6a89a786877ecf7978a4f0459">
+        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.0.0_2b875f8bc7bb3e0b09f6436f782799b94b43c198/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -315,285 +594,6 @@
         revision="24.0.2"
         sha1="4431efe5d0f67fab36a698dde725946b33a6bf4a">
         <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.0.0_38965020b522e3803cd7cb7dec45e557df91ecdf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.0.0_7c796549d5be525d0867d03cbccf84a55653a55f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="24536a7b97926a9c155c88425da6875adeb11b51">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.0.0_13cec78f3e10f6dc0a19df3cd02da4a532817734/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="817b9101192f2fd6dc0fd8cd522d8f4a1a75fcdc">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.0.0_55aaa838efc9959e237a35103fdfd2282ff3d4bd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2cb29455028e92e024bbad0d41c6ec772f2433d1">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.0.0_3e186ed92da39c4f56905ab454675c8497ffa791/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="005786793d72c6deacbbbfd38177ed58e1aa6653">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.0.0_f101abb3d21f659a88fca398c5436711c71ac1a6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b8bedab61b3b5238cd9a07d3b04449d7fecdbc3b">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.0.0_b847562193ad7d5d93826f819b6c2aa267ff8bd5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_f1bda5de2e16f0c5cc1c370632fe9ea17cc03507/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_f2249f9d33d88e3b338d43ecb7c7814ad08bc896/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="79e4b41db41d4dbbf364c7bd6aaeee5b876c9d8b">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.0.0_8a31c6b1d741abb5866a1e39623b544dd69613c0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="733964f04c339e425439545b1d172c23b53f8c13">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.0.0_da098c46e47c2d163461859f272789575255df80/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.0.0_d08a2b61216324118cebf1d1612b0da75a6182d4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.0.0_c6fcd840b0e2e996ba8c2d869b03ebd6e1989515/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_4d0f10c3425de104f276be46a8eae2a9858e7d20/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_0780834465f71fe91ba26fc8419a21534ae7b874/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="784bbac6d657a97ec5a6f7c8964b2bccc6891e9a">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_54088aa24112befc9f3ffae066871392c7ed3977/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7e467a973b749c6390a5991c9a8edbde96fc10c9">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.0.0_8988b3610c2e0585ccf9f013ecf7b6073706f811/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_08414d3f4598289e21021a1785d30f6c398773bb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8126914f5bc372a33e27ea90f02412c32468ce8a">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.0.0_d4a9dc7cbc9a6a073aebfeee53c35f4c1f250feb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.0_57929fc63f4c994a05e2a866bc00c303c9a21d53/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="69472e334350cafbf442776da05c9a04955252fb">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.0.0_333dada050f60a4be3b36f80bf60c9598ac7d488/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="59cca9b91688dc2467754d36793b3d23bebd21a9">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.0.0_812ec3d8ce14f939f24b296243e0d3dced65d355/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d96f9f3ef66494d1231304cafd28c962dda80dea">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.0.0_4f09cf238cf1b50bd1eb313d92886625939caa7f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.0_f9c5a821c7eed29b1e20d1b8d3d780c8aabb9118/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_b4db75d5399f6856f50e3db63e85f0bd0476c478/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_c7754ed8ae117d356a24af61c7c6d21bf92120ed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_5c3ec84aa6d446694486e6caa2d0878ab32fedc3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5289e799a43a64c4137d109bf992e10a2f952aa3">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.0.0_dbf9018abbbe6eeb12b7bb078cef1ffd6d8b040c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ebfde1a055aea400df77584a68aa60609f618bed">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.0.0_07f3fa2bf364fbf6346153eca2965d45a30bae3c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_1be689bd1d43dcc00b4c771e935dbb59e149a00e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f0f6913a208a126269aaa68004ed0329a832c5b">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.0.0_80390f037940aeee0da3028fbce8e784ff9a4765/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/mauricio/Desktop/frontend/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7002ed92a3c46c6a89a786877ecf7978a4f0459">
-        <dex dex="/Users/mauricio/Desktop/frontend/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.0.0_2b875f8bc7bb3e0b09f6436f782799b94b43c198/classes.dex" />
     </item>
 
 </items>

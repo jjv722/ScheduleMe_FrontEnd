@@ -9,9 +9,9 @@ import retrofit2.http.Query;
  * Created by mauricio on 12/5/16.
  */
 
-public interface PartnerCalls {
-    @GET("/api/partners")
-    Call<ResponseBody> getAll(
+public interface UserCall {
+    @GET("/api/users")
+    Call<ResponseBody> get(
             @Query("t") String t
     );
 }

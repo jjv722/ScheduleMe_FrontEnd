@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by mauricio on 12/4/16.
@@ -56,5 +57,10 @@ public class ItemAdapter extends BaseAdapter {
 
     public boolean contains (String element) {
         return container.contains(element);
+    }
+
+    public void sort () {
+        Collections.sort(container);
+        notifyDataSetChanged();
     }
 }
