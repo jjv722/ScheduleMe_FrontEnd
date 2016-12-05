@@ -54,7 +54,9 @@ public class Network {
         );
     }
 
-    public Call<ResponseBody> getUser (String t) {
-        return userCall.get(t);
+    public Call<ResponseBody> getUser (Activity activity) {
+        return userCall.get(
+                Authentication.load(activity).getToken()
+        );
     }
 }

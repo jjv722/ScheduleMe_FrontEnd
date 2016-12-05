@@ -55,7 +55,7 @@ public class UserProfile extends Fragment implements Callback<ResponseBody> {
         userProfile = (ImageView) view.findViewById(R.id.profileImage);
         name = (TextView) view.findViewById(R.id.name);
         emailAddress = (TextView) view.findViewById(R.id.emailAddress);
-        Network.getInstance().getUser(Authentication.load(getActivity()).getToken()).enqueue(this);
+        Network.getInstance().getUser(getActivity()).enqueue(this);
         Picasso.with(getActivity()).load(R.drawable.default_profile_pic).into(userProfile);
         changeProfilePic.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,5 +1,6 @@
 package com.scheduleme;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -7,6 +8,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
@@ -18,9 +20,19 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.scheduleme.Book.Category;
 import com.scheduleme.History.History;
+import com.scheduleme.Network.Network;
 import com.scheduleme.Profile.UserProfile;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * Created by jjv on 11/9/16.
@@ -31,10 +43,11 @@ public class Main_Menu extends AppCompatActivity {
     private DrawerLayout d;
     private ActionBarDrawerToggle toggle;
     private int id;
+    private Activity activity = null;
     public void onCreate(Bundle bundle){
         super.onCreate(bundle);
         setContentView(R.layout.main_menu);
-
+        activity = this;
         t = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(t);
 
@@ -112,12 +125,43 @@ public class Main_Menu extends AppCompatActivity {
                 // initialize the fragment
                 ((MapFragment) f).getMapAsync(new OnMapReadyCallback() {
                     @Override
-                    public void onMapReady(GoogleMap googleMap) {
+                    public void onMapReady(final GoogleMap googleMap) {
                         CameraPosition cameraPosition = new CameraPosition.Builder()
                                 .target(new LatLng(30.2672, -97.7431))
-                                .zoom(10)
+                                .zoom(12)
                                 .build();
                         googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                        Network.getInstance().getPartners(getActivity()).enqueue(new Callback<ResponseBody>() {
+                            @Override
+                            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                                if (response.code() == 200) {
+                                    try {
+                                        JSONArray jsonArray = new JSONArray(response.body().string());
+                                        for (int i = 0; i < jsonArray.length(); i++) {
+                                            JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                            JSONArray places = jsonObject.getJSONArray("Places");
+                                            for (int j = 0; j < places.length(); j++) {
+                                                JSONObject place = places.getJSONObject(j);
+                                                JSONArray latlng = place.getJSONArray("Location");
+                                                String name = place.getString("Name");
+                                                Double lat = latlng.getDouble(0);
+                                                Double lng = latlng.getDouble(1);
+                                                googleMap.addMarker(new MarkerOptions()
+                                                        .position(new LatLng(lat, lng))
+                                                        .title(name));
+                                            }
+                                        }
+                                    } catch (Exception e) {
+                                        Log.d("Exception", e.toString());
+                                    }
+                                }
+                            }
+
+                            @Override
+                            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                            }
+                        });
                     }
                 });
                 setTitle("Browse Locations");
@@ -149,5 +193,7 @@ public class Main_Menu extends AppCompatActivity {
                     .commit();
         }
     }
-
+    private Activity getActivity() {
+        return this.activity;
+    }
 }
