@@ -2,6 +2,7 @@ package com.scheduleme.Auth;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
@@ -9,14 +10,18 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.scheduleme.Main_Menu;
 import com.scheduleme.Network.AuthenticationCalls;
 import com.scheduleme.R;
 
@@ -54,6 +59,20 @@ public class RegisterFragment extends Fragment implements Callback<ResponseBody>
                             "Register successful!",
                             Toast.LENGTH_SHORT
                     ).show();
+                    com.scheduleme.Authentication auth = new com.scheduleme.Authentication(
+                            email.getText().toString(),
+                            password.getText().toString()
+                    );
+                    auth.save(getActivity());
+
+                    Intent intent = new Intent(getActivity(), Main_Menu.class);
+                    startActivity(intent);
+                    getActivity().finish();
+                    Animation a = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_out_right);
+                    a.reset();
+                    RelativeLayout rl = (RelativeLayout) getActivity().findViewById(R.id.rootView);
+                    rl.clearAnimation();
+                    rl.startAnimation(a);
                 }
             }, 3000);
         } else {
