@@ -39,10 +39,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerInParent="true"/>
             <TextView
+                android:id="@+id/username"
                 android:layout_below="@id/profile_picture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="USERNAME"
                 android:layout_marginTop="16dp"
                 android:gravity="center"/>
         </RelativeLayout>

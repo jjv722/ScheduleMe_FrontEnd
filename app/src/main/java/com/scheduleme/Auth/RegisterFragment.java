@@ -28,7 +28,6 @@ import java.net.URL;
  */
 
 public class RegisterFragment extends Fragment implements Async_API.callback {
-//    public String SERVER_URL = "http://10.147.28.184:8000/";
     public String SERVER_URL = "http://10.147.12.210:8000/";
     public String SERVER_PATH = "api/register";
     public Button register;

@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -17,6 +18,8 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.scheduleme.Book.Book;
+import com.scheduleme.History.History;
 import com.scheduleme.Profile.My;
 
 /**
@@ -48,6 +51,12 @@ public class Main_Menu extends AppCompatActivity {
             toggle.syncState();
         }
 
+        // My UI
+        Authentication auth = Authentication.load(this);
+        TextView username = (TextView) findViewById(R.id.username);
+        username.setText(auth.getUser());
+
+
         id = R.id.profile;
         getFragmentManager()
                 .beginTransaction()
@@ -59,10 +68,33 @@ public class Main_Menu extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         id = findViewById(R.id.fragment_container).getId();
+        switch (id){
+            case R.id.profile: {
+                setTitle("Personal Profile");
+                break;
+            }
+            case R.id.bookNow: {
+                setTitle("Book Now");
+                break;
+            }
+            case R.id.browseLocation: {
+                setTitle("Browse Location");
+                break;
+            }
+            case R.id.history: {
+                setTitle("My History");
+                break;
+            }
+        }
     }
-
+    public void closeDrawer() {
+        if (d.isDrawerOpen(Gravity.LEFT)){
+            d.closeDrawer(Gravity.LEFT);
+        }
+    }
     public void navigation(View v){
         if (id == v.getId()) {
+            closeDrawer();
             return;
         }
         id = v.getId();
@@ -75,11 +107,13 @@ public class Main_Menu extends AppCompatActivity {
                 break;
             }
             case R.id.bookNow: {
-                out = "switching to book now / not implemented";
+                f = new Book();
+                out = "switching to book now";
                 break;
             }
             case R.id.browseLocation: {
                 f = MapFragment.newInstance();
+                // initialize the fragment
                 ((MapFragment) f).getMapAsync(new OnMapReadyCallback() {
                     @Override
                     public void onMapReady(GoogleMap googleMap) {
@@ -95,7 +129,8 @@ public class Main_Menu extends AppCompatActivity {
                 break;
             }
             case R.id.history: {
-                out = "switching to history / not implemented";
+                f = new History();
+                out = "switching to history";
                 break;
             }
         }
@@ -104,9 +139,7 @@ public class Main_Menu extends AppCompatActivity {
                 out,
                 Toast.LENGTH_SHORT
         ).show();
-        if (d.isDrawerOpen(Gravity.LEFT)){
-            d.closeDrawer(Gravity.LEFT);
-        }
+        closeDrawer();
         if (f != null) {
             getFragmentManager()
                     .beginTransaction()
