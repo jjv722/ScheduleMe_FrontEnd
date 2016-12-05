@@ -18,7 +18,7 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.scheduleme.Book.BookCategory;
+import com.scheduleme.Book.Category;
 import com.scheduleme.History.History;
 import com.scheduleme.Profile.My;
 
@@ -74,7 +74,7 @@ public class Main_Menu extends AppCompatActivity {
                 break;
             }
             case R.id.bookNow: {
-                setTitle("BookCategory Now");
+                setTitle("Category Now");
                 break;
             }
             case R.id.browseLocation: {
@@ -107,7 +107,7 @@ public class Main_Menu extends AppCompatActivity {
                 break;
             }
             case R.id.bookNow: {
-                f = new BookCategory();
+                f = new Category();
                 out = "switching to book now";
                 break;
             }
