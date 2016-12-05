@@ -17,7 +17,6 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
 import com.scheduleme.Profile.My;
 
 /**
@@ -54,6 +53,12 @@ public class Main_Menu extends AppCompatActivity {
                 .beginTransaction()
                 .add(R.id.fragment_container, new My())
                 .commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        id = findViewById(R.id.fragment_container).getId();
     }
 
     public void navigation(View v){
